@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selikur</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" width="150"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#">Tiket Saya</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#">Selikur News</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- endnavbar -->
+
+  <main class="container pilih-kursi">
+    
+    <h1>Pilih Kursi</h1>
+    <p>Pilih kursi yang akan kamu tempati selama pemutaran film.</p>
+
+    <section class="pilih-jam row">
+      <div class="col">
+        14.00
+      </div>
+      <div class="col text-end">
+        * Terisi * Kosong * Dipilih
+      </div>
+    </section>
+
+    <section class="baris-kursi row">
+      <section id="baris-kursi-kiri" class="col">
+        <div class="posisi-kursi">
+        </div>
+      </section>
+      <section id="baris-kursi-kanan" class="col">
+        <div class="posisi-kursi">
+        </div>
+      </section>
+    </section>
+
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+<style>
+
+#baris-kursi-kiri{
+  margin-right: 1rem;
+}
+#baris-kursi-kanan{
+  margin-left: 1rem;
+}
+
+.posisi-kursi {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: .75rem;
+}
+
+.posisi-kursi .kursi {
+  display: inline-block;
+  width: fit-content;
+  font-size: .75rem;
+  font-weight: 600;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: .5rem;
+}
+
+.posisi-kursi .kursi.terisi {
+  background: #1a2c50;
+  color: #fff;
+}
+</style>
+
+<script>
+  
+const kursi = [];
+//0=kosong 1=terisi
+kursi['kiri'] = [
+  [0,0,0,0,0,0,0,0,1,1],
+  [0,0,1,1,1,0,0,1,1,1],
+  [0,0,0,1,1,0,0,0,0,0],
+  [0,0,0,0,0,0,1,1,1,1],
+  [0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0]
+];
+
+kursi['kanan'] = [
+  [0,0,0,0,0,0,0,0,0,0],
+  [1,1,1,1,0,0,0,0,0,0],
+  [1,1,1,1,1,0,0,0,0,0],
+  [1,1,0,0,0,0,0,0,0,0],
+  [1,1,1,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0,0]
+];
+
+// render kursi kiri
+const pos_kiri = document.querySelector('#baris-kursi-kiri').querySelector('.posisi-kursi')
+for (let i = 0; i < kursi['kiri'].length; i++) {
+  for (let j = 0; j < kursi['kiri'][i].length; j++) {
+    let box = document.createElement('div')
+    if (kursi['kiri'][i][j] === 0) {
+      box.classList.add('kursi')
+    } else {
+      box.classList.add('kursi','terisi')
+    }
+    box.textContent = String.fromCharCode( i + 65 ) + (j + 1)
+    pos_kiri.appendChild(box)
+  }
+}
+
+// render kursi kanan
+const pos_kanan = document.querySelector('#baris-kursi-kanan').querySelector('.posisi-kursi')
+for (let i = 0; i < kursi['kanan'].length; i++) {
+  for (let j = 0; j < kursi['kanan'][i].length; j++) {
+    let box = document.createElement('div')
+    if (kursi['kanan'][i][j] === 0) {
+      box.classList.add('kursi')
+    } else {
+      box.classList.add('kursi','terisi')
+    }
+    box.textContent = String.fromCharCode( i + 65 ) + (j + 11)
+    pos_kanan.appendChild(box)
+  }
+}
+
+
+</script>
+</html>
