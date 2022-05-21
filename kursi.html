@@ -30,7 +30,7 @@
             <a class="nav-link" href="#">Tiket Saya</a>
           </li>
           <li class="nav-item me-2">
-            <a class="nav-link" href="#">Selikur News</a>
+            <a class="nav-link" href="#">SELIKUR News</a>
           </li>
           <li class="nav-item me-2">
             <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
@@ -52,10 +52,20 @@
 
     <section class="pilih-jam row">
       <div class="col">
-        14.00
+        <div class="btn-group">
+          <button class="btn btn-outline-light active dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><img src="assets/ikon jam.png" alt="">
+            14.40
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        
       </div>
       <div class="col text-end">
-        <img src="assets/Seat Status.svg"></a>
+        <img src="assets/seat status.svg"></a>
       </div>
     </section>
 
@@ -69,7 +79,57 @@
         </div>
       </section>
     </section>
-
+    
+    <div class="posisi-layar">
+      <a>Layar</a>        
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col order-first">
+          <h4 style="font-style: normal;font-weight: 500;font-size: 18px;line-height: 21px">Total</h4>
+          <h2 style="font-style: normal;font-weight: 700;font-size: 36px;line-height: 42px">Rp150.000</h2>
+        </div>
+        <div class="col">
+          <h4 style="font-style: normal;font-weight: 500;font-size: 18px;line-height: 21px">Kursi</h4>
+          <h2 style="font-style: normal;font-weight: 700;font-size: 36px;line-height: 42px">C8, C9, C10</h2>
+        </div>
+        <div class="col order-last">
+          <div class="d-grid gap-2 d-md-block">
+            <a href="#"></a><button class="btn btn-primary" type="button" 
+            style="color: #5A637A;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            background: #FFFFFF;
+            border: 1px solid #5A637A;
+            border-radius: 5.06667px;
+            width: 199px;
+            height: 48px;
+            padding: 12px 8px;
+            gap: 12px;"
+            >Kembali</button></a>
+            <a href="#"></a><button class="btn btn-primary" type="button" 
+            style="background: #1A2C50;
+            color: #FFBE00;
+            border-radius: 5.06667px; 
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            width: 199px;
+            height: 48px;" 
+            >KONFIRMASI</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -80,9 +140,11 @@
 <style>
 
 #baris-kursi-kiri{
+  margin-top: 20px;
   margin-right: 1rem;
 }
 #baris-kursi-kanan{
+  margin-top: 20px;
   margin-left: 1rem;
 }
 
@@ -107,6 +169,27 @@
   background: #1a2c50;
   color: #fff;
 }
+
+.posisi-layar {
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #DADFE8;
+  line-height: 28px;
+  margin-top: 80px; 
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  position: absolute;
+  height: 60px;
+  left: 0px;
+  right: 0px;
+  background: #118EEA;
+}
+
 </style>
 
 <script>
