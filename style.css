@@ -2,62 +2,93 @@ body {
     line-height: 1.5;
 }
 
-    #baris-kursi-kiri{
-        margin-top: 20px;
-        margin-right: 1rem;
-    }
-    #baris-kursi-kanan{
-        margin-top: 20px;
-        margin-left: 1rem;
-    }
+#baris-kursi-kiri {
+    margin-top: 20px;
+    margin-right: 1rem;
+}
 
-    .posisi-kursi {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        gap: .75rem;
-    }
+#baris-kursi-kanan {
+    margin-top: 20px;
+    margin-left: 1rem;
+}
 
-    .posisi-kursi .kursi {
-        display: inline-block;
-        width: 2.25rem;
-        text-align: center;
-        font-size: .75rem;
-        font-weight: 600;
-        border: 1px solid #aaa;
-        border-radius: 4px;
-        padding: .5rem;
-    }
+.posisi-kursi {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: .75rem;
+}
 
-    .posisi-kursi .kursi.terisi {
-        background: #1a2c50;
-        color: #fff;
-    }
+.posisi-kursi .kursi {
+    display: inline-block;
+    width: 2.25rem;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: 600;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5rem;
+}
 
-    .posisi-layar {
-        text-align: center;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        color: #DADFE8;
-        line-height: 28px;
-        margin-top: 80px; 
-        margin-bottom: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 15px;
-        position: absolute;
-        height: 60px;
-        left: 0px;
-        right: 0px;
-        background: #118EEA;
-    }
+.posisi-kursi .kursi.terisi {
+    background: #1a2c50;
+    color: #fff;
+}
 
-    .posisi-pemisah-footer {
-        position: absolute;
-        width: 1440px;
-        height: 1px;
-        left: 0px;
-        top: 0px;
-        background: #BDC5D5;
-    }
+.posisi-layar {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #DADFE8;
+    line-height: 28px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    position: absolute;
+    height: 60px;
+    left: 0px;
+    right: 0px;
+    background: #118EEA;
+}
+
+.posisi-pemisah-footer {
+    position: absolute;
+    width: 1440px;
+    height: 1px;
+    left: 0px;
+    top: 0px;
+    background: #BDC5D5;
+}
+
+.tombol-kembali {
+    color: #5A637A;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #5A637A;
+    border-radius: 5.06667px;
+    width: 199px;
+    height: 48px;
+    padding: 12px 8px;
+    margin-right: 100px;
+}
+
+.tombol-konfirmasi {
+    background: #1A2C50;
+    color: #FFBE00;
+    border-radius: 5.06667px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    width: 199px;
+    height: 48px;
+    margin-left: 100px;
+}
