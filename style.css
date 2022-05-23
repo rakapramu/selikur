@@ -39,25 +39,110 @@ body {
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
-        color: #DADFE8;
+        color: #ffffff;
         line-height: 28px;
         margin-top: 80px; 
         margin-bottom: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
         padding: 15px;
-        position: absolute;
+        width: 1303px;
         height: 60px;
         left: 0px;
         right: 0px;
         background: #118EEA;
     }
 
-    .posisi-pemisah-footer {
+    .tombol-kembali {
+        color: #5A637A;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        background: #FFFFFF;
+        border: 1px solid #5A637A;
+        border-radius: 5.06667px;
+        width: 199px;
+        height: 48px;
+        padding: 12px 8px;
+        margin-right: 100px;
+    }
+    
+    .tombol-konfirmasi {
+        background: #1A2C50;
+        color: #FFBE00;
+        border-radius: 5.06667px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        width: 199px;
+        height: 48px;
+        margin-left: 100px;
+    }
+
+    .font-harga-total {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    
+    .font-harga {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .font-kursi {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .font-total-kursi {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .footer-pemisah {
         position: absolute;
-        width: 1440px;
+        background: #BDC5D5;
         height: 1px;
         left: 0px;
-        top: 0px;
-        background: #BDC5D5;
+        right: 0px;
+    }
+
+    .font-judul {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .font-tanggal {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .font-kelas {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .font-jam {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .font-tiket {
+        color: #000000;
+        font-size: 24px;
+        font-weight: 500;
     }
