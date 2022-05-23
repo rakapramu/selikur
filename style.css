@@ -1,3 +1,63 @@
-img{
-    width: 100px;
+body {
+    line-height: 1.5;
 }
+
+    #baris-kursi-kiri{
+        margin-top: 20px;
+        margin-right: 1rem;
+    }
+    #baris-kursi-kanan{
+        margin-top: 20px;
+        margin-left: 1rem;
+    }
+
+    .posisi-kursi {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: .75rem;
+    }
+
+    .posisi-kursi .kursi {
+        display: inline-block;
+        width: 2.25rem;
+        text-align: center;
+        font-size: .75rem;
+        font-weight: 600;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: .5rem;
+    }
+
+    .posisi-kursi .kursi.terisi {
+        background: #1a2c50;
+        color: #fff;
+    }
+
+    .posisi-layar {
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #DADFE8;
+        line-height: 28px;
+        margin-top: 80px; 
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px;
+        position: absolute;
+        height: 60px;
+        left: 0px;
+        right: 0px;
+        background: #118EEA;
+    }
+
+    .posisi-pemisah-footer {
+        position: absolute;
+        width: 1440px;
+        height: 1px;
+        left: 0px;
+        top: 0px;
+        background: #BDC5D5;
+    }
