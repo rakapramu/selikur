@@ -2,6 +2,7 @@ body {
     line-height: 1.5;
 }
 
+    /* Bagian Kursi */
     #baris-kursi-kiri {
         margin-top: 20px;
         margin-right: 1rem;
@@ -113,6 +114,30 @@ body {
         right: 0px;
     }
 
+    /* Bagian Pembayaran */
+    .container-content {
+        width: 1500px;
+        padding: 5px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .container-detail-jadwal {
+        margin-top: 50px;
+        padding: 5px;
+    }
+
+    .container-detail-jadwal div {
+        width: 405px;
+    }
+
+    .container-ringkasan-order {
+        border: 1px solid #C4C4C4;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 13px;
+        padding: 30px;
+        width: 500px;
+    }
 
     .font-judul {
         color: #000000;
