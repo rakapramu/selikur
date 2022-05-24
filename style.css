@@ -113,6 +113,7 @@ body {
         right: 0px;
     }
 
+
     .font-judul {
         color: #000000;
         font-size: 24px;
@@ -142,3 +143,83 @@ body {
         font-size: 24px;
         font-weight: 500;
     }
+
+    .form-ringkasan-order {
+        width: 430px;
+        height: 550px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 13px;
+      }
+
+    .font-detail-transaksi {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+    }
+
+    .font-promo-voucher {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+    }
+
+    .font-total-bayar {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+    }
+
+    .font-89k {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+    }
+      
+    .font-metode-pembayaran {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+    }
+
+    .font-lihat-semua {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #118EEA;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .font-note {
+        font-weight: 400;
+        font-size: 13.5px;
+        line-height: 14px;
+        color: #ff2b2b;
+    }
+
+    .tombol-beli-tiket {
+        margin-left: 10px;
+        background: #1A2C50;
+        color: #FFBE00;
+        border-radius: 5.06667px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        width: 380px;
+        height: 60px;
+
+    }
+
+      
