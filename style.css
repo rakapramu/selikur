@@ -117,7 +117,7 @@ body {
     /* Bagian Pembayaran */
     .container-content {
         width: 1500px;
-        padding: 5px;
+        padding: 0px;
         box-sizing: border-box;
         display: flex;
     }
@@ -247,4 +247,116 @@ body {
 
     }
 
-      
+    /* Bagian Login */
+    .main-login {
+        
+        margin: 30px auto;
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 1500px;
+        padding: 0px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .login-kembali {
+        width: 405px;
+    }
+
+    .main-login div{
+        padding: 10px;
+    }
+
+    .container-login{
+        border: 1px solid #C4C4C4;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+        margin-top: 30px;
+        padding-bottom: 0px;
+        width: 600px;
+        background-color: white;
+    }
+
+    .container-login div{
+        margin: 50px;
+        margin-bottom: 0px;
+    }
+
+    .font-no-hp {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .font-62 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        align-items: center;
+        color: #9DA8BE;
+        outline: none;
+    }
+
+    .font-pw {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .font-input {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        align-items: center;
+        color: #9DA8BE;
+    }
+
+    .tombol-masuk-sekarang {
+        margin-left: 10px;
+        background: #1A2C50;
+        border-radius: 5.06667px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        width: 380px;
+        height: 60px;
+    }
+
+    .font-akun-belum {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #5A637A;
+    }
+
+    .tombol-daftar-sekarang {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #1A2C50;
+        margin-left: 10px;
+        background: #FFFFFF;
+        border: 1px solid #5A637A;
+        border-radius: 5.06667px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        width: 380px;
+        height: 60px;
+    }
+
+    .font-keterangan {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
