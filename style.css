@@ -367,3 +367,22 @@ body {
         line-height: 14px;
         color: #5A637A;
     }
+
+    /* Bagian News */
+    .news-content {
+        width: 1500px;
+        margin-top: 70px;
+        padding: 0px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content-caption {
+        margin-top: 70px;
+        padding: 0px;
+        width: 700px;
+        text-align: justify;
+    }
+
+
