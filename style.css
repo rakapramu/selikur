@@ -247,7 +247,7 @@ body {
 
     }
 
-    /* Bagian Login */
+    /* Bagian Login & Sign Up*/
     .main-login {
         
         margin: 30px auto;
@@ -359,4 +359,11 @@ body {
         display: flex;
         align-items: center;
         color: #000000;
+    }
+
+    .snk {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #5A637A;
     }
