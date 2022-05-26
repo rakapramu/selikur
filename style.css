@@ -376,13 +376,36 @@ body {
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .news-content div {
+        margin-bottom: 100px;
+        width: 470px;
     }
 
     .content-caption {
+        margin-left: 170px;
         margin-top: 70px;
         padding: 0px;
-        width: 700px;
         text-align: justify;
     }
 
+    .poster-yowisben {
+        margin-right: 120px;
+    }
 
+    .content-caption2 {
+        margin-top: 40px;
+    }
+
+    .bagian-card {
+        width: 1500px;
+        margin-top: 70px;
+        margin-left: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap; 
+    }
