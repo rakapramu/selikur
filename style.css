@@ -391,8 +391,14 @@ body {
         text-align: justify;
     }
 
+    .content-caption2 {
+        margin-top: 70px;
+        padding: 0px;
+        text-align: justify;
+    }
+
     .poster-yowisben {
-        margin-right: 120px;
+        margin-right: 90px;
     }
 
     .content-caption2 {
@@ -406,6 +412,5 @@ body {
         padding: 0px;
         box-sizing: border-box;
         display: flex;
-        justify-content: space-between;
         flex-wrap: nowrap; 
     }
