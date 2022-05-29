@@ -380,7 +380,7 @@ body {
     }
 
     .news-content div {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         width: 470px;
     }
 
@@ -405,12 +405,37 @@ body {
         margin-top: 40px;
     }
 
-    .bagian-card {
+    .card-content {
         width: 1500px;
-        margin-top: 70px;
-        margin-left: 0px;
-        padding: 0px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 30%;
+    }
+    
+    /* Bagian Artikel */
+    .container-article {
+        margin: 30px auto;
+        width: 1500px;
         box-sizing: border-box;
         display: flex;
-        flex-wrap: nowrap; 
+        flex-direction: column;
+        flex-wrap: wrap;    
+    }
+
+    .judul-article {
+        text-align: center;
+    }
+
+    .article-content {
+        width: 858px; 
+        text-align: justify;
+        margin: auto;
+    }
+    
+    .article-bawah {
+        text-align: center;
     }
