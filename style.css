@@ -439,3 +439,41 @@ body {
     .article-bawah {
         text-align: center;
     }
+
+    /* Bagian Homepage */
+    .homepage {
+        margin: 30px auto;
+        width: 1500px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-item img {
+        margin-left: 121px;
+        
+    }
+
+    .carousel-control-prev-icon-satu {
+        background-color: #383782;
+        border-radius: 20px;
+    }
+
+    .carousel-control-next-icon-satu {
+        background-color: #383782;
+        border-radius: 20px;
+    }
+
+    .carousel-item-dua img {
+        margin-left: 0px;
+    }
+   
+    .carousel-control-prev-icon-dua {
+        background-color: #228fc2;
+        border-radius: 20px;
+    }
+
+    .carousel-control-next-icon-dua {
+        background-color: #228fc2;
+        border-radius: 20px;
+    }
