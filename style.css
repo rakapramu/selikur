@@ -244,7 +244,13 @@ body {
         text-align: center;
         width: 380px;
         height: 60px;
+    }
 
+    .tombol-batal {
+        background: #1A2C50;
+        color: #FFBE00;
+        border-radius: 5.06667px;
+        width: 70px;
     }
 
     /* Bagian Login & Sign Up*/
@@ -476,4 +482,11 @@ body {
     .carousel-control-next-icon-dua {
         background-color: #228fc2;
         border-radius: 20px;
+    }
+
+    /* Bagian Pembayaran Sukses */
+    .article-content-2 {
+        width: 533px; 
+        text-align: center;
+        margin: auto;
     }

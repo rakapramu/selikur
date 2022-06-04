@@ -45,18 +45,16 @@
   </nav>
   <!-- endnavbar -->
   <br>
+
   <main class="container">
-    
     <h1>KONFIRMASI PEMBAYARAN</h1>
     <p>Konfirmasi pembayaran dari kursi yang anda pesan.</p>
-
     <section class="container container-content">    
         <div class="container d-grid gap-3 container-detail-jadwal" style="grid-template-columns: 25.1rem 1fr;">
           <div>
             <h3>Detail Jadwal</h3>
             <br>
             <table class="table">
-              <caption><br><br><br><a href="#"><img src="assets/kembali.svg" alt=""></a></caption>
                 <tbody>
                     <tr>
                       <td>Judul Film<br><p class="font-judul">SPIDERMAN NO WAY HOME</p></td>
@@ -89,7 +87,7 @@
                         <td><p class="font-detail-transaksi">Detail Transaksi</p><p>REGULAR SEAT</p><p>BIAYA LAYANAN</p></td>
                         <td></td>
                         <td></td>
-                        <td class="text-end"><p></p><br><p class="font-50k">Rp50.000 (X3)</p><p class="font-3k">Rp3.000 (X3)</p></td>
+                        <td class="text-end"><p></p><br><p class="font-50k">Rp50.000 (3x)</p><p class="font-3k">Rp3.000 (3x)</p></td>
                       </tr>
                       <tr>
                         <td><p class="font-promo-voucher">Promo & Voucher</p><p class="">PROMO SELIKUR</p></td>
@@ -112,8 +110,27 @@
                   </tbody>
               </table>
         </div>
-    <br><br>
-  </section>       
+  </section>
+  <div>
+    <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" role="button" data-bs-toggle="button" aria-pressed="true"><img src="assets/kembali.svg" alt=""></a>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="staticBackdropLabel" style="color: #333333;">Ingin Kembali?</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Kursi yang kamu pilih sebelumnya akan dibatalkan dan kamu harus memilih ulang
+          </div>
+          <div class="modal-footer">
+            <a href=""><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Kembali</button></a>
+            <button type="button" class="btn btn-primary tombol-batal">Batal</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>     
   <br><br><br><br><br>
   
   </main>
