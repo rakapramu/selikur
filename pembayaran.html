@@ -24,13 +24,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item me-2">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
           </li>
           <li class="nav-item me-2">
             <a class="nav-link" href="#">Tiket Saya</a>
           </li>
           <li class="nav-item me-2">
-            <a class="nav-link" href="#">Selikur News</a>
+            <a class="nav-link" href="SELIKUR News.html">Selikur News</a>
           </li>
           <li class="nav-item me-2">
             <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
@@ -80,7 +80,7 @@
               <h3>Ringkasan Order</h3>
               <br>
               <table class="table table-sm">
-                <caption><p class="font-note">*Pembelian tiket tidak dapat dibatalkan</p><br><a href="#"><button class="btn btn-primary tombol-beli-tiket" type="button">BELI TIKET</button></a>
+                <caption><p class="font-note">*Pembelian tiket tidak dapat dibatalkan</p><br><a href="pembayaran sukses.html"><button class="btn btn-primary tombol-beli-tiket" type="button">BELI TIKET</button></a>
                 </caption>
                   <tbody>
                       <tr>
@@ -90,10 +90,10 @@
                         <td class="text-end"><p></p><br><p class="font-50k">Rp50.000 (3x)</p><p class="font-3k">Rp3.000 (3x)</p></td>
                       </tr>
                       <tr>
-                        <td><p class="font-promo-voucher">Promo & Voucher</p><p class="">PROMO SELIKUR</p></td>
+                        <td><p class="font-promo-voucher">Promo & Voucher</p><p>PROMO SELIKUR</p></td>
                         <td></td>
                         <td></td>
-                        <td class="text-end"><p></p><br><p class="">- Rp70.000</p></td>
+                        <td class="text-end"><p></p><br><p>- Rp70.000</p></td>
                       </tr>
                       <tr>
                         <td class="font-total-bayar">Total Bayar</td>
@@ -105,34 +105,59 @@
                         <td><p class="font-metode-pembayaran">Metode Pembayaran</p><p><img src="assets/Dana.svg" alt=""></p></td>
                         <td></td>
                         <td></td>
-                        <td class="text-end"><a href="#" class="font-lihat-semua">Lihat Semua</a></td>
+                        <td>
+                          <div class="text-end">
+                            <a href="#" class="font-lihat-semua" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lihat Semua</a>
+                          </div>
+                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h3 class="modal-title" id="staticBackdropLabel" style="color: #333333;">Pilih Pembayaran</h3>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <table class="table table-sm">
+                                      <tbody>
+                                          <tr>
+                                            <td><h4 style="color: #5A637A;">Dompet Virtual</h4><p><img src="assets/logo dana 2.svg" alt=""> Dana</p></td>
+                                            <td class="text-end"><p></p><br><p><img src="assets/checklist logo.svg" alt=""></p></td>
+                                          </tr>
+                                          <tr>
+                                            <td><h4 style="color: #5A637A;">Minimarket</h4><p><img src="assets/Indomaret Logo.svg" alt=""> Indomaret</p></td>
+                                          </tr>
+                                          <tr>
+                                            <td><p><img src="assets/Alfamart Logo.svg" alt=""> Alfamart</p></td>
+                                          </tr>
+                                          <tr>
+                                            <td><h4 style="color: #5A637A;">Transfer Bank</h4><p><img src="assets/BCA Logo.svg" alt=""> Bank BCA</p></td>
+                                          </tr>
+                                          <tr>
+                                            <td><p><img src="assets/Bank BRI Logo.svg" alt=""> Bank BRI</p></td>
+                                          </tr>
+                                          <tr>
+                                            <td><p><img src="assets/BNI Logo.svg" alt=""> Bank BNI</p></td>
+                                          </tr>
+                                          <tr>
+                                            <td><p><img src="assets/Mandiri Logo.svg" alt=""> Bank Mandiri</p></td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
                       </tr>
                   </tbody>
               </table>
         </div>
   </section>
   <div>
-    <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" role="button" data-bs-toggle="button" aria-pressed="true"><img src="assets/kembali.svg" alt=""></a>
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title" id="staticBackdropLabel" style="color: #333333;">Ingin Kembali?</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Kursi yang kamu pilih sebelumnya akan dibatalkan dan kamu harus memilih ulang
-          </div>
-          <div class="modal-footer">
-            <a href=""><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Kembali</button></a>
-            <button type="button" class="btn btn-primary tombol-batal">Batal</button>
-          </div>
-        </div>
-      </div>
-    </div>  
+    <a href="kursi.html"><img src="assets/kembali.svg" alt=""></a>
+     
   </div>     
-  <br><br><br><br><br>
-  
+  <br><br><br><br><br>  
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -205,3 +230,24 @@
 </footer>
 
 </html>
+
+<!-- <div>
+  <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" role="button" data-bs-toggle="button" aria-pressed="true"><img src="assets/kembali.svg" alt=""></a>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="staticBackdropLabel" style="color: #333333;">Ingin Kembali?</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Kursi yang kamu pilih sebelumnya akan dibatalkan dan kamu harus memilih ulang
+        </div>
+        <div class="modal-footer">
+          <a href=""><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Kembali</button></a>
+          <button type="button" class="btn btn-primary tombol-batal">Batal</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div> -->
